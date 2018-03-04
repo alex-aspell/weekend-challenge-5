@@ -13,6 +13,10 @@
 
 <h2>Results</h2>
 <ul ng-repeat="result in sc.searchArray.list">
-    <li>{{result.name}}</li>
+    <li>{{result.name}}
+        {{result.height}}
+        {{result.climate}}
+    </li>
+    
     <button ng-click="sc.addFavorite(result)">Favorite</button>
 </ul>

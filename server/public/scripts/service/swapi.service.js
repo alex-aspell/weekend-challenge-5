@@ -1,4 +1,3 @@
-console.log('Swapi Service connected');
 app.service('SwapiService', ['$http', function($http){
     let self = this;
 

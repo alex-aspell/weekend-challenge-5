@@ -3,8 +3,8 @@ app.controller('SearchController', ['SwapiService', function(SwapiService){
 
     
     self.searchAPI = SwapiService.searchAPI; 
+    self.addFavorite = SwapiService.addFavorite; 
      
     self.searchAPI;
     self.searchArray = SwapiService.searchArray;
-    console.log(self.searchArray);
 }]);

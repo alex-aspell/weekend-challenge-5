@@ -1,5 +1,7 @@
 app.controller('FavoritesController', ['SwapiService', function(SwapiService){
     let self = this. 
     
-    self.addFavorite = SwapiService.addFavorite; 
+    self.getFavorites = SwapiService.getFavorites; 
+
+    self.getFavorties; 
 }])
