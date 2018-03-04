@@ -3,8 +3,8 @@
 ## TO DO
     [x] create client side with two views, two controllers and service
     [x] create server side 
-    [] make html and connect to client
-    [] make with select for the API
+    [x] make html and connect to client
+    [] make select for the API
     [] figure out how to use API 
     [] display API results on DOM
     [] create favorite button
