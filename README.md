@@ -2,7 +2,7 @@
 
 ## TO DO
     [x] create client side with two views, two controllers and service
-    [] create server side 
+    [x] create server side 
     [] make html and connect to client
     [] make with select for the API
     [] figure out how to use API 
