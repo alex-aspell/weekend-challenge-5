@@ -1,10 +1,17 @@
 <h2>Search the API</h2>
-
-<select>
-    <option value="People">People</option>
-    <option value="Films">Films</option>
-    <option value="Starships">Starships</option>
-    <option value="Vehicles">Vehicles</option>
-    <option value="Species">Species</option>
-    <option value="Planets">Planets</option>
+<!-- Needs ng-repeat -->
+<select ng-model="sc.newSearch.value">
+    <option value="people">People</option>
+    <option value="films">Films</option>
+    <option value="starships">Starships</option>
+    <option value="vehicles">Vehicles</option>
+    <option value="species">Species</option>
+    <option value="planets">Planets</option>
 </select>
+<input ng-model="sc.newSearch.keyword" placeholder="Keyword">
+<button ng-click="sc.searchAPI(sc.newSearch)">Search</button>
+
+<h2>Results</h2>
+<div ng-repeat+>
+
+</div>
