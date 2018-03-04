@@ -12,6 +12,7 @@
 <button ng-click="sc.searchAPI(sc.newSearch)">Search</button>
 
 <h2>Results</h2>
-<div ng-repeat+>
-
-</div>
+<ul ng-repeat="result in sc.searchArray.list">
+    <li>{{result.name}}</li>
+    <button ng-click="sc.addFavorite(result)">Favorite</button>
+</ul>
