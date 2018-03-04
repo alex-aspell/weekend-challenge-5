@@ -21,8 +21,8 @@ mongoose.connection.on('error', function (error) {
 
 mongoose.connect(databaseUrl);
 
-// const swapiRouter = require('./routes/swapi-router');
-// app.use('/swapi', swapiRouter);
+const swapiRouter = require('./routes/swapi-router');
+app.use('/favorites', swapiRouter);
 
 const port = process.env.PORT || 12345
 

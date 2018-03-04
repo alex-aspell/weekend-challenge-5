@@ -20,7 +20,7 @@ app.service('SwapiService', ['$http', function($http){
         console.log('send result as favorite', result)
         $http({
             method: 'POST',
-            url: '/swapi',
+            url: '/favorites',
             data: result
         }).then(function(response){
             console.log('Favorite added', response);
@@ -32,7 +32,7 @@ app.service('SwapiService', ['$http', function($http){
     self.getFavorites = function(){
         $http({
             method: 'GET',
-            url: '/swapi'
+            url: '/favorites'
         }).then(function(response){
             self.displayFavorites = response;
         }).catch(function(error){
