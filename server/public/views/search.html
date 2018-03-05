@@ -13,9 +13,9 @@
 
 <h2>Results</h2>
 <ul ng-repeat="result in sc.searchArray.list">
-    <li>{{result.name}}
-        {{result.height}}
-        {{result.climate}}
+    <li>{{result.name}} {{result.title}}</br>
+        {{result.gender}} {{result.climate}} {{result.episode_id}} {{result.model}} {{result.classification}}</br>
+        {{result.birth_year}} {{result.terrain}} {{result.release_date}} {{result.manufacturer}} {{result.language}}
     </li>
     
     <button ng-click="sc.addFavorite(result)">Favorite</button>

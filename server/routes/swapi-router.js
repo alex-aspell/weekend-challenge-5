@@ -3,7 +3,18 @@ const router = express.Router();
 const mongoose = require('mongoose');
 
 const FavoritesSchema = new mongoose.Schema({
-    name: {type: String, required: true}
+    name: String,
+    title: String,
+    gender: String,
+    climate: String,
+    episode_id: Number,
+    model: String,
+    classification: String,
+    birth_year: String,
+    terrain: String,
+    release_date: Date,
+    manufacturer: String,
+    language: String
 });
 
 const Favorite = mongoose.model('Favorite', FavoritesSchema, 'favorites');
