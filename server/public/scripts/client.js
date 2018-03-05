@@ -1,4 +1,4 @@
-const app = angular.module('swapiApp', ['ngRoute']);
+const app = angular.module('swapiApp', ['ngRoute', 'ngMaterial']);
 
 app.config(function($routeProvider){
     $routeProvider.when('/search', {
