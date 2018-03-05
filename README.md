@@ -9,7 +9,7 @@
     [x] display API results on DOM
     [x] create favorite button
     [x] make push to send favorites to the db
-    [] create schema in router
-    [] make get to retrieve favorites from the db
+    [x] create schema in router
+    [x] make get to retrieve favorites from the db
     [] display favorites on the DOM
     [] add styling

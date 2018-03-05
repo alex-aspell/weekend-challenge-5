@@ -2,6 +2,7 @@ app.service('SwapiService', ['$http', function($http){
     let self = this;
 
     self.searchArray = {list: []};
+    self.displayFavorites = {list: []};
 
     self.searchAPI = function(newSearch){
         console.log('searching API', newSearch);
@@ -34,7 +35,8 @@ app.service('SwapiService', ['$http', function($http){
             method: 'GET',
             url: '/favorites'
         }).then(function(response){
-            self.displayFavorites = response;
+            console.log(response.data);
+            self.displayFavorites.list = response.data;
         }).catch(function(error){
             console.log('display error', error)
         })

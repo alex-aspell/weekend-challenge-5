@@ -21,5 +21,16 @@ router.post('/', (request, response) => {
     }) 
 })
 
+router.get('/', (request, response) => {
+    Favorite.find({}, (error, gotFavorites) => {
+        if(error){
+            console.log('error on got favorites', error);
+            response.sendStatus(500);
+        } else{
+            response.send(gotFavorites);
+        }
+    }) 
+})
+
 
 module.exports = router; 
