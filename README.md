@@ -11,5 +11,5 @@
     [x] make push to send favorites to the db
     [x] create schema in router
     [x] make get to retrieve favorites from the db
-    [] display favorites on the DOM
+    [x] display favorites on the DOM
     [] add styling
