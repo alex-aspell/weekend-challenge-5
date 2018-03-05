@@ -43,5 +43,17 @@ router.get('/', (request, response) => {
     }) 
 })
 
-
+router.delete('/delete/:id', (request, response) => {
+    let id = request.params.id;
+    Favorite.findByIdAndRemove(
+        {"_id": id},
+        (error, success) => {
+          if(error){
+            console.log('error in delete', error);
+            response.sendStatus(500);
+          } else {
+            response.sendStatus(200);
+          }
+        })
+})
 module.exports = router; 

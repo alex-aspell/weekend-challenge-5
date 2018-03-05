@@ -41,4 +41,16 @@ app.service('SwapiService', ['$http', function($http){
             console.log('display error', error)
         })
     }
+
+    self.deleteFavorite = function(favorite){
+        $http({
+            method: 'DELETE',
+            url: `/favorites/delete/${favorite._id}`
+        }).then(function(response){
+            console.log('delete', response);
+            self.getFavorites();
+        }).catch(function(error){
+            console.log('delete error', error);
+        })
+    }
 }]);

@@ -3,6 +3,7 @@ app.controller('FavoritesController', ['SwapiService', function(SwapiService){
     
     self.getFavorites = SwapiService.getFavorites; 
     self.displayFavorites = SwapiService.displayFavorites; 
+    self.deleteFavorite = SwapiService.deleteFavorite;
     
     self.getFavorites(); 
 }])
