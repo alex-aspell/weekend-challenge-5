@@ -1,9 +1,9 @@
 <h2>Your Star Wars Favorites!</h2>
 
-<ul ng-repeat="favorite in fc.displayFavorites.list">
-        <li>{{favorite.name}} {{favorite.title}}</br>
+<ul layout="row" ng-repeat="favorite in fc.displayFavorites.list">
+        <li flex="20">{{favorite.name}} {{favorite.title}}</br>
             {{favorite.gender}} {{favorite.climate}} {{favorite.episode_id}} {{favorite.model}} {{favorite.classification}}</br>
             {{favorite.birth_year}} {{favorite.terrain}} {{favorite.release_date}} {{favorite.manufacturer}} {{favorite.language}}
         </li>
-        <button ng-click="fc.deleteFavorite(favorite)">Delete Favorite</button>
+        <button flex="5" ng-click="fc.deleteFavorite(favorite)">Delete Favorite</button>
 </ul>

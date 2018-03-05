@@ -11,12 +11,12 @@
 <input ng-model="sc.newSearch.keyword" placeholder="Keyword">
 <button ng-click="sc.searchAPI(sc.newSearch)">Search</button>
 
-<h2>Results</h2>
+<h2 flex class="second-box box">Results</h2>
 <ul ng-repeat="result in sc.searchArray.list">
     <li>{{result.name}} {{result.title}}</br>
         {{result.gender}} {{result.climate}} {{result.episode_id}} {{result.model}} {{result.classification}}</br>
         {{result.birth_year}} {{result.terrain}} {{result.release_date}} {{result.manufacturer}} {{result.language}}
     </li>
     
-    <button ng-click="sc.addFavorite(result)">Favorite</button>
+    <md-button class="md-primary md-raised" ng-click="sc.addFavorite(result)">Favorite</md-button>
 </ul>
